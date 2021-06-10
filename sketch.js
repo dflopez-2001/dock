@@ -40,11 +40,11 @@ function draw() {
 
   if(keyDown("left_arrow")){
     spaceship.velocityX = spaceship.velocityX-0.1
-    spaceship.addImage(spaceshipleft);
+    spaceship.addImage(spaceshipright);
   }
   if(keyDown("right_arrow")){
     spaceship.velocityX = spaceship.velocityX+0.1
-    spaceship.addImage(spaceshipright);
+    spaceship.addImage(spaceshipleft);
   }
   if(spaceship.isTouching(dockspot)){
     hasDocked = true
